@@ -1,0 +1,19 @@
+{
+    "name": "serverlessSqlDatabase",
+    "type": "Microsoft.Synapse/workspaces/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "AzureSqlDatabase",
+        "typeProperties": {
+            "server": "demo-de-synapse01-ondemand.sql.azuresynapse.net",
+            "database": "gold_db",
+            "encrypt": "optional",
+            "trustServerCertificate": false,
+            "authenticationType": "SystemAssignedManagedIdentity"
+        },
+        "connectVia": {
+            "referenceName": "AutoResolveIntegrationRuntime",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}
